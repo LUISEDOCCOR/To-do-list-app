@@ -1,0 +1,8 @@
+input.custom-input {
+    max-width: 700px;
+  }
+button.custom-button, a.custom-a{
+    width: 100px;
+    margin-top: 20px;
+    
+}
