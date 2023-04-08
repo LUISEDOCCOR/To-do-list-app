@@ -23,7 +23,7 @@
                 <div class="text-center mt-4">
                   <h3 class="mt-3">Start using it now</h3>
                   <a class="btn btn-lg btn-dark mt-3" href="register.php">Get Started</a>
-                  <a href="https://github.com/LUISEDOCCOR/To-do-list-app" type="button" class="btn btn-info mt-3"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://github.com/LUISEDOCCOR/To-do-list-app"target="_blank" type="button" class="btn btn-info mt-3"><i class="fa-brands fa-github"></i></a>
   
                 </div>
               </div>

@@ -2,9 +2,18 @@
 
 session_start();
 
+if(!isset($_SESSION["user"])){
+  header("Location: index.php");
+  return;
+};
+
 
 require "database.php";
 $dolist = $conn->query("SELECT * FROM dolist WHERE user_id = {$_SESSION['user']['id']}");
+
+
+
+
 ?>
 
 

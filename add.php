@@ -67,19 +67,22 @@
             </div>
         <?php endif?>    
         <form method="POST" action="add.php">
-            <div class="mb-3">
-              <label  class="form-label">Title</label>
-              <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label  class="form-label">Subtitle</label>
-              <input type="text" class="form-control" id="subtitle" name="subtitle">
-            </div>
-            <div class="mb-3">
-                <label  class="form-label">Notes</label>
-                <input type="text" class="form-control" id="notes" name="notes">
-              </div>
-           <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-floating mb-3">
+            <input  type="text" class="form-control" id="title" placeholder="title" name="title" ></input>
+            <label for="title">Title</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input  type="text" class="form-control" id="subtitle" placeholder="subtitle" name="subtitle" ></input>
+            <label for="subtitled">Subtitle</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="notes" id="notes" name="notes" style="height: 100px"></textarea>
+            <label for="notes">Notes</label>
+          </div>
+           <div class="d-flex flex-column">
+            <button type="submit" class="btn btn-primary custom-button">Submit</button>
+            <a href="home.php?>" class="btn btn-danger custom-a">Cancel</a>
+           </div>
         </form>
     </main>
 

@@ -98,19 +98,18 @@
             </div>
         <?php endif?>    
         <form method="POST" action="edit.php?id=<?=$dolist["id"] ?>" class="d-flex flex-column ">
-            <div class="mb-3" >
-              <label  class="form-label">Title</label>
-              <input  value="<?=$dolist["title"] ?>" type="text" class="  form-control custom-input" id="title" name="title" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label  class="form-label">Subtitle</label>
-              <input value="<?=$dolist["subtitle"] ?>" type="text" class="form-control custom-input" id="subtitle" name="subtitle">
-            </div>
-            <div class="mb-3">
-                <label    class="form-label">Notes</label>
-                <input value="<?=$dolist["notes"] ?>" type="text" class="form-control  custom-input" id="notes" name="notes">
+            <div class="form-floating mb-3">
+                <input  type="text" class="form-control" id="title" placeholder="title" name="title" value="<?=$dolist["title"]?>" ></input>
+                <label for="title">Title</label>
               </div>
-            <div class="d-flex gap-2">
+              <div class="form-floating mb-3">
+                <input  type="text" class="form-control" id="subtitle" placeholder="subtitle" name="subtitle" value="<?=$dolist["subtitle"]?>" ></input>
+                <label for="subtitled">Subtitle</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="notes" id="notes" name="notes" style="height: 100px"><?=$dolist["notes"]?></textarea>
+                <label for="notes">Notes</label>
+              </div>
               <button type="submit" class="btn btn-primary custom-button">Apply</button>
               <a href="home.php?>" class="btn btn-danger custom-a">Cancel</a>
             </div>
