@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu Mono', monospace;
+
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/10725897/pexels-photo-10725897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    color: white;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#h1{
+    padding-bottom: 20px;
+    font-size: 40px;
+    animation: typing 3s steps(20) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+h2{
+    font-size: 25px;
+}
+
+main{
+    background-color:#242424;
+    height:calc(100vh - 250px) ;
+}
+i{
+    font-size: 23px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
